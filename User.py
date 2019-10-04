@@ -17,7 +17,7 @@ class User():
         self.login_attempts += 1
 
     def read_login_attempts(self):
-        """read login try"""
+        """Read login try"""
         print(str(self.login_attempts))
 
     def reset_login_attenpts(self):
