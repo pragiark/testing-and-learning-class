@@ -23,9 +23,14 @@ class Car():
         else:
             self.odometer_reading = mileage
 
+    def increment_odometer(self, kilometer):
+        """Increment odometer method"""
+        self.odometer_reading += kilometer
+
 
 
 my_new_car = Car("ford", "focus", 2008)
 print(my_new_car.get_descriptive_name())
-my_new_car.update_odometer(777)
-#my_new_car.read_odometer()
+#my_new_car.update_odometer(777)
+my_new_car.increment_odometer(77)
+my_new_car.read_odometer()
