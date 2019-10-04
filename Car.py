@@ -19,4 +19,5 @@ class Car():
 
 my_new_car = Car("ford", "focus", 2008)
 print(my_new_car.get_descriptive_name())
+my_new_car.odometer_reading = 77
 my_new_car.read_odometer()
