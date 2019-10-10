@@ -59,6 +59,16 @@ class Battery():
         """"Print battery size information"""
         print("Ten samochód ma akumulator o pojemności " + str(self.battery_size) + " kWh")
 
+    def get_range(self):
+        """Range electric car"""
+        if self.battery_size == 70:
+            range = 240
+        elif self.battery_size == 85:
+            range = 270
+        massage = "Zasięg wynosi około " + str(range)
+        print(massage)
+
+
 
 
 focus = Car("ford", "focus", 2008)
@@ -76,6 +86,7 @@ tesla.update_odometer(0)
 tesla.read_odometer()
 tesla.fill_gas_tank(20)
 tesla.read_gas_tank()
-
+tesla.battery.get_range()
 tesla.battery.describe_battery()
+tesla.battery.get_range()
 
