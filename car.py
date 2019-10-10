@@ -1,3 +1,5 @@
+"""Class Car"""
+
 class Car():
     """Simple car class"""
     def __init__(self, make, model, year):
@@ -67,26 +69,3 @@ class Battery():
             range = 270
         massage = "Zasięg wynosi około " + str(range)
         print(massage)
-
-
-
-
-focus = Car("ford", "focus", 2008)
-focus.get_descriptive_name()
-#my_new_car.update_odometer(777)
-focus.increment_odometer(77)
-focus.read_odometer()
-focus.fill_gas_tank(45)
-focus.read_gas_tank()
-
-tesla = ElectricCar("Tesla", "Model S", 2018)
-tesla.get_descriptive_name()
-tesla.read_odometer()
-tesla.update_odometer(0)
-tesla.read_odometer()
-tesla.fill_gas_tank(20)
-tesla.read_gas_tank()
-tesla.battery.get_range()
-tesla.battery.describe_battery()
-tesla.battery.get_range()
-
